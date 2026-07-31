@@ -11,16 +11,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
-    /* Logo centralizada no topo */
+    /* Logo centralizada */
     .logo {
       margin-top: 20px;
       max-width: 120px;
     }
 
-    /* Área principal centralizada */
+    /* Área principal */
     .main {
       flex: 1;
       display: flex;
@@ -28,6 +28,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 20px;
     }
 
     .main h1 {
@@ -41,11 +42,11 @@
       color: #555;
     }
 
-    /* Botões marrom claro */
+    /* Botões padrão (desktop) */
     .buttons {
       position: absolute;
       right: 20px;
-      top: 100px;
+      top: 120px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -67,10 +68,37 @@
     .buttons a:hover {
       background-color: #8B4513;
     }
+
+    /* Responsividade para smartphones */
+    @media (max-width: 768px) {
+      .buttons {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .buttons a {
+        width: 90%; /* ocupa quase toda a largura da tela */
+        font-size: 18px;
+      }
+
+      .logo {
+        max-width: 100px;
+      }
+
+      .main h1 {
+        font-size: 22px;
+      }
+
+      .main p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Logo centralizada -->
+  <!-- Logo -->
   <img src="logo.png" alt="Logo BZK Cultura" class="logo">
 
   <!-- Área principal -->
@@ -79,7 +107,7 @@
     <p>Site em construção</p>
   </div>
 
-  <!-- Botões laterais -->
+  <!-- Botões -->
   <div class="buttons">
     <a href="#">QUEM SOMOS</a>
     <a href="#">PRODUTOS</a>
