@@ -9,11 +9,12 @@
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: center;
       height: 100vh;
     }
 
-    /* Logo no canto superior esquerdo */
+    /* Logo no topo */
     .logo {
       position: absolute;
       top: 20px;
@@ -21,32 +22,43 @@
       max-width: 120px;
     }
 
-    /* Área principal */
+    /* Área principal centralizada */
     .main {
       flex: 1;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
-    /* Coluna lateral direita */
-    .sidebar {
-      width: 220px;
-      background-color: #8B4513; /* cor de terra */
+    .main h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .main p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Botões marrom claro */
+    .buttons {
+      position: absolute;
+      right: 20px;
+      top: 100px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      padding-top: 40px;
+      align-items: flex-end;
     }
 
-    /* Botões pretos */
-    .sidebar a {
-      background-color: black;
+    .buttons a {
+      background-color: #A0522D; /* marrom claro */
       color: white;
       text-decoration: none;
-      padding: 15px;
-      margin: 10px 0;
+      padding: 12px 20px;
+      margin: 8px 0;
       width: 180px;
       text-align: center;
       border-radius: 6px;
@@ -54,8 +66,8 @@
       transition: background-color 0.3s;
     }
 
-    .sidebar a:hover {
-      background-color: #333;
+    .buttons a:hover {
+      background-color: #8B4513;
     }
   </style>
 </head>
@@ -66,10 +78,11 @@
   <!-- Área principal -->
   <div class="main">
     <h1>Bem-vindo à BZK Cultura</h1>
+    <p>Site em construção</p>
   </div>
 
-  <!-- Coluna lateral direita -->
-  <div class="sidebar">
+  <!-- Botões laterais -->
+  <div class="buttons">
     <a href="#">QUEM SOMOS</a>
     <a href="#">PRODUTOS</a>
     <a href="#">NOSSA MISSÃO</a>
