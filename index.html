@@ -7,40 +7,74 @@
     body {
       background-color: white;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    /* Logo no canto superior esquerdo */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      max-width: 120px;
+    }
+
+    /* Área principal */
+    .main {
+      flex: 1;
+      display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
     }
-    img {
-      max-width: 200px;
-      margin-bottom: 20px;
+
+    /* Coluna lateral direita */
+    .sidebar {
+      width: 220px;
+      background-color: #8B4513; /* cor de terra */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 40px;
     }
-    .whatsapp-button {
-      background-color: #25D366;
+
+    /* Botões pretos */
+    .sidebar a {
+      background-color: black;
       color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 18px;
-      border-radius: 8px;
-      cursor: pointer;
       text-decoration: none;
+      padding: 15px;
+      margin: 10px 0;
+      width: 180px;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: background-color 0.3s;
     }
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
+
+    .sidebar a:hover {
+      background-color: #333;
     }
   </style>
 </head>
 <body>
-  <!-- Logo centralizada -->
-  <img src="logo.png" alt="Logo BZK Cultura">
+  <!-- Logo -->
+  <img src="Logo.png" alt="Logo BZK Cultura" class="logo">
 
-  <!-- Botão WhatsApp -->
-  <a class="whatsapp-button" href="https://wa.me/5585999999999" target="_blank">
-    Fale conosco no WhatsApp
-  </a>
+  <!-- Área principal -->
+  <div class="main">
+    <h1>Bem-vindo à BZK Cultura</h1>
+  </div>
+
+  <!-- Coluna lateral direita -->
+  <div class="sidebar">
+    <a href="#">QUEM SOMOS</a>
+    <a href="#">PRODUTOS</a>
+    <a href="#">NOSSA MISSÃO</a>
+    <a href="#">AÇÕES</a>
+    <a href="#">ORÇAMENTOS</a>
+  </div>
 </body>
 </html>
