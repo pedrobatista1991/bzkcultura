@@ -52,22 +52,19 @@
       align-items: flex-end;
     }
 
-    .buttons a {
-      background-color: #A0522D; /* marrom claro */
-      color: white;
-      text-decoration: none;
-      padding: 12px 20px;
-      margin: 8px 0;
-      width: 180px;
-      text-align: center;
-      border-radius: 6px;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
+    button {
+  background-color: #2750F5; /* cor de fundo azul */
+  color: #ffffff;           /* texto branco para contraste */
+  border: none;             /* remove borda padrão */
+  padding: 10px 20px;       /* espaçamento interno */
+  border-radius: 5px;       /* cantos arredondados */
+  cursor: pointer;          /* cursor de clique */
+}
 
-    .buttons a:hover {
-      background-color: #8B4513;
-    }
+button:hover {
+  background-color: #1e3ec9; /* tom mais escuro no hover */
+}
+
 
     /* Responsividade para smartphones */
     @media (max-width: 768px) {
