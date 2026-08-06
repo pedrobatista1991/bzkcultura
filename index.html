@@ -2,115 +2,56 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>BZK Cultura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Atualizado</title>
   <style>
     body {
-      background-color: white;
-      margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    /* Logo centralizada */
-    .logo {
-      margin-top: 20px;
-      max-width: 120px;
-    }
-
-    /* Área principal */
-    .main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .main h1 {
-      margin: 20px 0 10px 0;
-      font-size: 28px;
-    }
-
-    .main p {
       margin: 0;
-      font-size: 18px;
-      color: #555;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
-    /* Botões padrão (desktop) */
-    .buttons {
-      position: absolute;
-      right: 20px;
-      top: 120px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
+    header {
+      background-color: #2750F5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1e3ec9;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
     }
 
     button {
-  background-color: #2750F5; /* cor de fundo azul */
-  color: #ffffff;           /* texto branco para contraste */
-  border: none;             /* remove borda padrão */
-  padding: 10px 20px;       /* espaçamento interno */
-  border-radius: 5px;       /* cantos arredondados */
-  cursor: pointer;          /* cursor de clique */
-}
-
-button:hover {
-  background-color: #1e3ec9; /* tom mais escuro no hover */
-}
-
-
-    /* Responsividade para smartphones */
-    @media (max-width: 768px) {
-      .buttons {
-        position: static;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-      }
-
-      .buttons a {
-        width: 90%; /* ocupa quase toda a largura da tela */
-        font-size: 18px;
-      }
-
-      .logo {
-        max-width: 100px;
-      }
-
-      .main h1 {
-        font-size: 22px;
-      }
-
-      .main p {
-        font-size: 16px;
-      }
+      background-color: #2750F5; /* azul principal */
+      color: #ffffff;           /* texto branco */
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
     }
-  </style>
-</head>
-<body>
-  <!-- Logo -->
-  <img src="logo.png" alt="Logo BZK Cultura" class="logo">
 
-  <!-- Área principal -->
-  <div class="main">
-    <h1>Bem-vindo à BZK Cultura</h1>
-    <p>Site em construção</p>
-  </div>
-
-  <!-- Botões -->
-  <div class="buttons">
-    <a href="#">QUEM SOMOS</a>
-    <a href="#">PRODUTOS</a>
-    <a href="#">NOSSA MISSÃO</a>
-    <a href="#">AÇÕES</a>
-    <a href="#">ORÇAMENTOS</a>
-  </div>
-</body>
-</html>
+    button:hover {
+      background
