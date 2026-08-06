@@ -44,8 +44,8 @@
 
     /* ESTILO DOS BOTÕES */
     button, .btn {
-      background-color: #2750F5 !important; /* força o azul */
-      color: #ffffff !important;           /* texto branco */
+      background-color: #2750F5 !important;
+      color: #ffffff !important;
       border: none;
       padding: 12px 24px;
       border-radius: 6px;
@@ -57,7 +57,7 @@
     }
 
     button:hover, .btn:hover {
-      background-color: #1e3ec9 !important; /* tom mais escuro no hover */
+      background-color: #1e3ec9 !important;
     }
 
     footer {
@@ -68,11 +68,25 @@
       margin-top: 20px;
     }
 
-    img {
-      max-width: 100%;
+    /* GALERIA DE IMAGENS */
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;          /* quebra linha se não couber */
+      justify-content: center;  /* centraliza na tela */
+      gap: 15px;                /* espaço entre imagens */
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 150px;             /* tamanho fixo */
       height: auto;
       border-radius: 8px;
-      margin: 20px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.1);    /* efeito zoom */
     }
   </style>
 </head>
@@ -94,7 +108,21 @@
     <button>Entre em Contato</button>
     <a href="#" class="btn">Botão Link</a>
 
-    <img src="https://via.placeholder.com/800x400.png?text=Imagem+de+Destaque" alt="Imagem de destaque">
+    <!-- GALERIA DE IMAGENS -->
+    <div class="galeria">
+      <img src="images/1.png" alt="Imagem 1">
+      <img src="images/2.png" alt="Imagem 2">
+      <img src="images/3.png" alt="Imagem 3">
+      <img src="images/4.png" alt="Imagem 4">
+      <img src="images/5.png" alt="Imagem 5">
+      <img src="images/6.png" alt="Imagem 6">
+      <img src="images/7.png" alt="Imagem 7">
+      <img src="images/8.png" alt="Imagem 8">
+      <img src="images/9.png" alt="Imagem 9">
+      <img src="images/10.png" alt="Imagem 10">
+      <img src="images/11.png" alt="Imagem 11">
+      <img src="images/12.png" alt="Imagem 12">
+    </div>
   </main>
 
   <footer>
